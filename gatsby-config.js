@@ -7,5 +7,4 @@ module.exports = {
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: ["gatsby-plugin-sass"],
-  pathPrefix: "KingKaiZhuang.github.io/react-final-project",
 };

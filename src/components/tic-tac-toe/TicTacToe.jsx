@@ -35,7 +35,7 @@ export default function TicTacToe() {
   return (
     <>
       <div className="game">
-        <div className="board-item">
+        <div className="board">
           <Board
             xIsNext={xIsNext}
             squares={currentSquares}

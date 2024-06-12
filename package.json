@@ -12,7 +12,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
@@ -27,5 +28,8 @@
     "react-router-dom": "^6.23.1",
     "sass": "^1.77.5",
     "styled-components": "^6.1.11"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }

@@ -1,11 +1,26 @@
+$primary-color: #0ff;
+$secondary-color: #00f;
+$bg-color: #000;
+$btn-bg-color: #323232;
+$btn-hover-color: #0ff;
+$btn-active-color: darkred;
+$btn-text-color: white;
+$display-bg-color: black;
+$display-text-color: $primary-color;
+$action-bg-color: #444;
+$action-text-color: $primary-color;
+$operator-bg-color: #555;
+$operator-text-color: $primary-color;
+
 .calculator {
   width: 360px;
-  color: white;
+  color: $btn-text-color;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   border-radius: 10px;
   background-color: grey;
   margin: auto;
   padding: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
 }
 
 .board {
@@ -16,47 +31,53 @@
 .display {
   width: 100%;
   height: 75px;
-  background-color: black;
+  background-color: $display-bg-color;
   text-align: right;
   font-size: 50px;
   border-radius: 5px;
+  color: $display-text-color;
+  padding: 10px;
+  box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.5);
 }
 
 .btn {
-  background-color: #323232;
-  color: white;
+  background-color: $btn-bg-color;
+  color: $btn-text-color;
   width: 60px;
   height: 60px;
   font-size: 25px;
   border-radius: 50%;
   outline: none;
-  border: 0px;
+  border: none;
   padding: 5%;
   margin: 5px;
   cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+
+  &:hover {
+    background-color: $btn-hover-color;
+    color: $bg-color;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+  }
+
+  &:active {
+    background-color: $btn-active-color;
+    color: $btn-text-color;
+    transform: scale(0.95);
+  }
 }
 
 .btn-action {
-  background-color: brown;
-  color: bisque;
+  background-color: $action-bg-color;
+  color: $action-text-color;
 }
 
 .btn-operator {
-  background-color: coral;
+  background-color: $operator-bg-color;
+  color: $operator-text-color;
 }
 
 .btn-0 {
   width: 130px;
   border-radius: 30px;
-}
-
-.btn:hover {
-  background-color: white;
-  color: black;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
-}
-
-.btn:active {
-  background-color: darkred;
-  color: white;
 }

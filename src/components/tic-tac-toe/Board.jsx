@@ -61,21 +61,14 @@ export default function Board({ xIsNext, squares, onPlay }) {
   return (
     <>
       <div className="status">{status}</div> {/* 狀態文字 */}
-      <div>
-        <Square value={squares[0]} onSquareClick={() => handleClick(0)} />{" "}
-        {/* 第一排方格 */}
+      <div className="board-item">
+        <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
         <Square value={squares[1]} onSquareClick={() => handleClick(1)} />
         <Square value={squares[2]} onSquareClick={() => handleClick(2)} />
-      </div>
-      <div>
-        <Square value={squares[3]} onSquareClick={() => handleClick(3)} />{" "}
-        {/* 第二排方格 */}
+        <Square value={squares[3]} onSquareClick={() => handleClick(3)} />
         <Square value={squares[4]} onSquareClick={() => handleClick(4)} />
         <Square value={squares[5]} onSquareClick={() => handleClick(5)} />
-      </div>
-      <div>
-        <Square value={squares[6]} onSquareClick={() => handleClick(6)} />{" "}
-        {/* 第三排方格 */}
+        <Square value={squares[6]} onSquareClick={() => handleClick(6)} />
         <Square value={squares[7]} onSquareClick={() => handleClick(7)} />
         <Square value={squares[8]} onSquareClick={() => handleClick(8)} />
       </div>

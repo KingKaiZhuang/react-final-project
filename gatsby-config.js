@@ -4,7 +4,8 @@
 module.exports = {
   siteMetadata: {
     title: `My React Final Test Project`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: ["gatsby-plugin-sass"]
+  plugins: ["gatsby-plugin-sass"],
+  pathPrefix: "KingKaiZhuang.github.io/react-final-project",
 };

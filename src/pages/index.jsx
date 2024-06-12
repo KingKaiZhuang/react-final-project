@@ -1,7 +1,13 @@
-import * as React from "react";
+// src/pages/index.js
+import React from "react";
+import Layout from "../components/Layout";
 
 const IndexPage = () => {
-  return <>index</>;
+  return (
+    <>
+      <Layout />
+    </>
+  );
 };
 
 export default IndexPage;

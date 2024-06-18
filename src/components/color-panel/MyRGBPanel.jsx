@@ -4,9 +4,9 @@ import MySlider from "../color-panel/MySlider";
 import "../../assets/scss/_ColorPanel.scss";
 
 export default function MyRGBPanel() {
-  const [r, setR] = useState(0);
-  const [g, setG] = useState(0);
-  const [b, setB] = useState(128);
+  const [r, setR] = useState(255);
+  const [g, setG] = useState(255);
+  const [b, setB] = useState(255);
 
   const updateR = (value) => {
     setR(value);

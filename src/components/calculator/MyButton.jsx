@@ -4,7 +4,6 @@ import "../../assets/scss/_MyCalculator.scss";
 function MyButton(props) {
   const handelClick = (e) => {
     props.buttonClicked(e.target.value);
-    // alert(e.target.value);
   };
   return (
     <div className="board">
